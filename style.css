@@ -1,0 +1,293 @@
+
+
+/* End of font install */
+
+
+
+
+/* Left column / Nav */
+
+.left-column {
+	font-family: "Roboto Condensed",sans-serif;
+	background-color: #1a1b24;
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: 100%;
+	position: fixed;
+	border-right: 1px solid gray;
+}
+
+/*Brand*/
+
+.brand {
+	padding: 0 30px;
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.brand img {
+	width: 50%;
+}
+
+.brand h1 {
+	font-family: "Aviano Future Heavy Fast";
+	text-align: center;
+}
+
+
+
+/*Top header*/
+
+.top-header {
+	color: #dfe0e6;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.top-header ul {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.top-header li {
+	margin: auto;
+	border-right: 1px solid #dfe0e6;
+	padding: 0;
+	display: inline-block;
+	cursor: pointer;
+	width: 32%;
+}
+
+.top-header li:last-child {
+	border: none;
+}
+
+.left-column.collapsed .top-header li span {
+	width: auto;
+	display: none;
+}
+
+.top-header span {
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*Main Nav*/
+#main-nav.collapsed {
+	width: 100%;
+}
+
+#main-nav>ul {
+	margin-top: 30px;
+	padding: 0;
+
+}
+#main-nav>ul>li {
+
+	list-style: none;
+	padding: 0 24px;
+	position: relative;
+
+}
+
+#main-nav>ul>li.active {
+	border-left: 4px solid #00F900;
+	background-color: #111218;
+}
+
+#main-nav>ul>li.active>a {
+	color: #00F900;
+}
+
+#main-nav>ul>li>a {
+	padding: 12px 0px;
+	text-transform: uppercase;
+	display: block;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0;
+	font-size: 15px;
+	box-sizing: border-box;
+	line-height: 21px;
+	transition: all 0.25s ease-in-out;
+}
+
+#main-nav>ul>li>a:after{
+	content: '\f105';
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+#main-nav>ul>li>a:hover {
+	margin-left: 10px;
+	text-decoration: none;
+	color: #00F900;
+}
+
+#main-nav>ul>li.active>a:hover {
+	margin-left: 0px;
+}
+
+.left-column.collapsed {
+	width: 100%;
+	height: auto;
+	z-index: 99999;
+	display: inline-block;
+	position: fixe
+}
+
+.left-column.collapsed .brand {
+	margin: 0;
+	width: unset;
+	text-align: left;
+	padding: 0;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.left-column.collapsed .top-header {
+	display: inline-block;
+	float: right;
+	width: unset;
+	padding: 0;
+}
+
+.left-column.collapsed .top-header li {
+	font-size: 15px;
+	padding: 15px 20px;
+	align-items: center;
+	transition: color .4s ease-in-out;
+}
+
+.left-column.collapsed .top-header li:hover {
+	color: #00F900;
+}
+
+.left-column .brand img {
+	width: auto;
+	height: 60px;
+}
+
+.left-column.collapsed .brand img {
+	width: 140px;
+	height: unset;
+}
+
+.left-column.collapsed .top-header li {
+	width: auto;
+}
+
+.left-column.collapsed .top-header li span {
+	display: none;
+}
+/* End Left column / Nav */
+
+/* Side Bottom */
+
+#side-bottom {
+	position: absolute;
+	bottom: 15px;
+}
+
+#side-bottom>ul>li {
+	list-style: none;
+	display: inline-block;
+}
+
+#side-bottom>ul>li:last-child>a:after {
+	content: none;
+}
+
+
+#side-bottom>ul>li>a {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	list-style: none;
+	line-height: 0px;
+	color: #ababab;
+	box-sizing: border-box;
+	transition: color .4s ease-in-out;
+}
+#side-bottom>ul>li>a:hover {
+	color: #00F900;
+	text-decoration: none;
+}
+
+#side-bottom>ul>li>a:after {
+	content: "|";
+	margin: 10px;
+}
+#side-bottom>ul>li>a:hover:after {
+	color: #ababab;
+}
+
+#side-bottom ul {
+	text-align: center;
+	padding: 0;
+}
+
+#social-nav {
+	text-align: center;
+}
+
+#social-nav>.social-links {
+	cursor: default;
+}
+
+#social-nav>.social-links>a {
+	color: #ababab;
+	font-size: 1.1em;
+	margin: 0 10px;
+	transition: color .4s ease-in-out;
+}
+
+#social-nav>.social-links>a:hover {
+	text-decoration: none;
+	color: #00F900;
+}
+
+.left-column.collapsed #side-bottom {
+	display: none;
+}
+
+.left-column.collapsed #main-nav {
+	display: none;
+}
+
+/* End Side Bottom */
+
+/* Main Section */
+
+.main {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 10000px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	padding: 0;
+	margin: 0;
+}
+
+.jumbotron img {
+	width: 100%;
+}
+/* End Jumbotron */
+
+/* End Main */
